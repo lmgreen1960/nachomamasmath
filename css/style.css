@@ -1,6 +1,6 @@
 .topnav
 {
-    Display:block;
+    Display:flex;
     Background-color:rgb(207, 207, 207);
     margin: 10px 1% 0 0;      
 } 
@@ -34,33 +34,42 @@ a
 
 .profilecard
 {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color:rgb(207, 207, 207);
-    width: 80%;
+    width: 70%;
     height: 30%;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 5%;
-    border-radius: 5%;    
+    border-radius: 5%; 
+    padding: 5% 0 0 0;   
 }    
 
 .profilepic
 {
     border-radius: 50%;
     width:60%;
-    margin:10% 0 0 20%;
+    /* margin:10% 20% 0 20%; */
 }
 
-.caption
+.caption, .dates
 {
     font-family: arsenal, arial, sans-serif;
     font-size: 24px;
     color:darkblue;
     text-align:center;
+    /* align-items:center; */
 
 }
 
+
 .sidebar
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: darkgreen;
     float:left;
     width: 27%;
@@ -129,6 +138,7 @@ p
     
 }
 
+
 .galleryheadline
 {
     display:block;
@@ -136,21 +146,30 @@ p
     font-family: arsenal, arial, sans-serif;
     
 }
-
+.row 
+{
+    display:flex;
+    
+}
 .column {
-    float: left;
-    width: 22%;
-    padding: 1%;
-    margin:.5%;
-    border-radius: 3%;
-    background-color:darkblue;
+    /* float: left; */
+    width: 25%;
+    
+    /* margin:.5%; */
+    /* border-radius: 3%; */
+    /* background-color:black; */
+    /* padding: 5px; */
   }
 
   
 
-  .row::after {
+  /* .row::after {
     content: "";
     clear: both;
-    display:table;
+    display:table; */
   }
 
+  h5, h6
+  {
+      margin:0;
+  }
